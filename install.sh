@@ -8,9 +8,11 @@ ln -s ${BASEDIR}/vim/ ~/.vim
 
 # zsh
 ln -s ${BASEDIR}/zshrc ~/.zshrc
+ln -s ${BASEDIR}/oh-my-zsh ~/.oh-my-zsh
 
 # git
 ln -s ${BASEDIR}/gitconfig ~/.gitconfig
 
 # tmux
 ln -s ${BASEDIR}/tmux.conf ~/.tmux.conf
+
