@@ -28,3 +28,7 @@
 [submodule "vim/pack/vendor/start/vim-zoom"]
 	path = vim/pack/vendor/start/vim-zoom
 	url = https://github.com/dhruvasagar/vim-zoom
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
