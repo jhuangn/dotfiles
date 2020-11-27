@@ -32,3 +32,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "vim/pack/vendor/start/tabnine-vim"]
+	path = vim/pack/vendor/start/tabnine-vim
+	url = https://github.com/zxqfl/tabnine-vim
