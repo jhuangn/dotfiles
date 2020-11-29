@@ -159,10 +159,11 @@ let g:lightline = {
       \ 'colorscheme': 'powerline',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified', 'gitbranch'] ]
+      \             [ 'readonly', 'filename', 'modified', 'gitbranch', 'zoom'] ]
       \ },
       \ 'component_function': {
       \   'gitbranch': 'FugitiveHead',
+      \   'zoom': 'zoom#statusline',
       \ },
       \ }
 
