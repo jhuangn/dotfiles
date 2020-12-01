@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Aliases to easily turn on and off proxy
-alias proxy_on="export http_proxy=127.0.0.1:7890 && export https_proxy=127.0.0.1:7890"
+alias proxy_on="export http_proxy=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809 && export https_proxy=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809"
 alias proxy_off="export http_proxy= && export https_proxy="
 
 # Set vim key binding in zsh
@@ -123,6 +123,9 @@ export EDITOR=vim
 
 # Key timeout
 KEYTIMEOUT=1
+
+# Homebrew
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

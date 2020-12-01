@@ -2,7 +2,12 @@
 
 set -e
 
+if grep -q microsoft /proc/version; then
+CONFIG="wslinstall.conf.yaml"
+else
 CONFIG="install.conf.yaml"
+fi
+
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"

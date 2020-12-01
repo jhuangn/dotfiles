@@ -8,8 +8,8 @@
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vimrc
-    ~/.vim/.custom.vim: custom.vim
-    ~/.zshrc: zshrc
+    ~/.vim/.custom.vim: wslcustom.vim
+    ~/.zshrc: wslzshrc
     ~/.oh-my-zsh: oh-my-zsh
     ~/.gitconfig: gitconfig
 
