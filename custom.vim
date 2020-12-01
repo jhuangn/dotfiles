@@ -1,2 +1,0 @@
-" Clipboard
-set clipboard=unnamed

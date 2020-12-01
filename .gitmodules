@@ -36,11 +36,11 @@
 	path = vim/pack/vendor/start/tabnine-vim
 	url = https://github.com/zxqfl/tabnine-vim
 [submodule "zsh/zsh-autosuggestions"]
-	path = zsh/zsh-autosuggestions
+	path = zsh/custom/plugin/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "zsh/powerlevel10k"]
-	path = zsh/powerlevel10k
+	path = zsh/custom/theme/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "zsh/zsh-syntax-highlighting"]
-	path = zsh/zsh-syntax-highlighting
+	path = zsh/custom/plugin/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git

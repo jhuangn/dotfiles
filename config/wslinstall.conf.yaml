@@ -11,7 +11,7 @@
     ~/.custom.vim: vim/wslcustom.vim
     ~/.zshrc: zsh/wslzshrc
     ~/.oh-my-zsh: oh-my-zsh
-    ~/.zsh: zsh
+    ~/.zshcustom: zsh/custom
     ~/.gitconfig: gitconfig
 
 - shell:
