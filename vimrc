@@ -1,3 +1,6 @@
+" Easy Expansion of the Active File Directory
+cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " Cursor in terminal
 " https://vim.fandom.com/wiki/Configuring_the_cursor
 " 1 or 0 -> blinking block
@@ -145,6 +148,8 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " If more than one window and previous buffer was NERDTree, go back to it.
 autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | endif
+" Close NERDTree automatically after opening a file
+let NERDTreeQuitOnOpen=1
 
 
 " lightline
