@@ -3,9 +3,11 @@
 set -e
 
 if uname -a|grep -q microsoft; then
-CONFIG="wslinstall.conf.yaml"
+CONFIG="config/wslinstall.conf.yaml"
+elif uname -a|grep -q Linux; then
+CONFIG="config/linuxinstall.conf.yaml"
 else
-CONFIG="install.conf.yaml"
+CONFIG="config/install.conf.yaml"
 fi
 
 DOTBOT_DIR="dotbot"
