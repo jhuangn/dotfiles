@@ -2,7 +2,7 @@
 
 set -e
 
-if grep -q microsoft /proc/version; then
+if uname -a|grep -q microsoft; then
 CONFIG="wslinstall.conf.yaml"
 else
 CONFIG="install.conf.yaml"

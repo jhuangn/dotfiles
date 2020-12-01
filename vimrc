@@ -1,5 +1,5 @@
 " Custom vim script
-runtime .custom.vim
+runtime ~/.custom.vim
 
 " Easy Expansion of the Active File Directory
 cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
