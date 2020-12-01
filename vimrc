@@ -100,7 +100,7 @@ set softtabstop=4
 
 " commentstring settings
 autocmd FileType cpp setlocal commentstring=//\  %s
-autocmd FileType sh,python,tmux,conf setlocal commentstring=#\ %s
+autocmd FileType sh,python,tmux,conf,zsh setlocal commentstring=#\ %s
 autocmd FileType vim setlocal commentstring=\"\ %s 
 
 
