@@ -7,9 +7,6 @@ if executable(s:clip)
         autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @+) | endif
     augroup END
 endif
-" WSL put support
-map <silent> "+p :r !powershell.exe -Command Get-Clipboard<CR>
-map! <silent> <C-r>+ :r !powershell.exe -Command Get-Clipboard<CR>
 
 " Easy Expansion of the Active File Directory
 cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
