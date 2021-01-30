@@ -1,6 +1,3 @@
-" Clipboard
-set clipboard=unnamed
-
 " Easy Expansion of the Active File Directory
 cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 

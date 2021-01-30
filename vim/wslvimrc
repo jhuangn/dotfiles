@@ -4,9 +4,12 @@ let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to
 if executable(s:clip)
     augroup WSLYank
         autocmd!
-        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @+) | endif
     augroup END
 endif
+" WSL put support
+map <silent> "+p :r !powershell.exe -Command Get-Clipboard<CR>
+map! <silent> <C-r>+ :r !powershell.exe -Command Get-Clipboard<CR>
 
 " Easy Expansion of the Active File Directory
 cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
