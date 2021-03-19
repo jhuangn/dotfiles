@@ -12,6 +12,7 @@
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zshcustom: zsh/custom
     ~/.gitconfig: gitconfig
+    ~/.pylintrc: pylintrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
