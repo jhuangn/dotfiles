@@ -233,3 +233,7 @@ map  <Leader>/ <Plug>(easymotion-sn)
 omap <Leader>/ <Plug>(easymotion-tn)
 " smartcase
 let g:EasyMotion_smartcase = 1
+
+" tagbar
+" https://github.com/preservim/tagbar.git
+nmap <F8> :TagbarToggle<CR>
