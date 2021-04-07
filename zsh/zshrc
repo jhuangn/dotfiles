@@ -114,14 +114,14 @@ source $ZSH/oh-my-zsh.sh
 # Aliases to easily turn on and off proxy
 # Different port for each system
 if uname -a|grep -q microsoft; then
-    alias PROXY="export http_proxy=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809 && export https_proxy=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809"
-    alias NOPROXY="export http_proxy= && export https_proxy="
+    alias proxy="export http_proxy=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809 && export https_proxy=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809"
+    alias noproxy="export http_proxy= && export https_proxy="
 elif uname -a|grep -q Linux; then
-    alias PROXY="export http_proxy=127.0.0.1:1081 && export https_proxy=127.0.0.1:1081"
-    alias NOPROXY="export http_proxy= && export https_proxy="
+    alias proxy="export http_proxy=127.0.0.1:1081 && export https_proxy=127.0.0.1:1081"
+    alias noproxy="export http_proxy= && export https_proxy="
 else
-    alias PROXY="export http_proxy=127.0.0.1:7890 && export https_proxy=127.0.0.1:7890"
-    alias NOPROXY="export http_proxy= && export https_proxy="
+    alias proxy="export http_proxy=127.0.0.1:7890 && export https_proxy=127.0.0.1:7890"
+    alias noproxy="export http_proxy= && export https_proxy="
 fi
 
 # Set vim key binding in zsh
