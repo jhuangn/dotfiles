@@ -13,6 +13,7 @@
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zsh/custom: zsh/custom
     ~/.gitconfig: gitconfig
+    ~/.global_extra_conf.py: global_extra_conf.py
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
