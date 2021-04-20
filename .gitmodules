@@ -48,3 +48,6 @@
 [submodule "vim/pack/vendor/start/tagbar"]
 	path = vim/pack/vendor/start/tagbar
 	url = https://github.com/preservim/tagbar.git
+[submodule "vim/pack/vendor/start/YouCompleteMe"]
+	path = vim/pack/vendor/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
