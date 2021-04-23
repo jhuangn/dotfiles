@@ -116,11 +116,8 @@ source $ZSH/oh-my-zsh.sh
 if uname -a|grep -q microsoft; then
     alias proxy="export http_proxy=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809 && export https_proxy=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809"
     alias noproxy="export http_proxy= && export https_proxy="
-elif uname -a|grep -q Linux; then
-    alias proxy="export http_proxy=127.0.0.1:1081 && export https_proxy=127.0.0.1:1081"
-    alias noproxy="export http_proxy= && export https_proxy="
 else
-    alias proxy="export http_proxy=127.0.0.1:7890 && export https_proxy=127.0.0.1:7890"
+    alias proxy="export http_proxy=127.0.0.1:10809 && export https_proxy=127.0.0.1:10809"
     alias noproxy="export http_proxy= && export https_proxy="
 fi
 
