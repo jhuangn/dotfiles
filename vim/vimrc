@@ -99,6 +99,7 @@ set splitbelow
 set splitright
 
 " Indention settings
+filetype plugin indent on
 set autoindent
 set smartindent
 set expandtab
