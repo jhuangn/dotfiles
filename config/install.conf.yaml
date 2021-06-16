@@ -16,5 +16,5 @@
     ~/.global_extra_conf.py: global_extra_conf.py
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - [git submodule update --init --remote, Updating submodules]
+  - [git submodule update --init --recursive]
+  - [git submodule foreach git pull origin master]
