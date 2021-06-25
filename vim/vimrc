@@ -281,3 +281,6 @@ let g:EasyMotion_smartcase = 1
 " tagbar
 " https://github.com/preservim/tagbar.git
 nmap <F8> :TagbarToggle<CR>
+
+" Write in su
+cnoremap W execute 'silent! write !sudo tee % >/dev/null' <bar> edit!

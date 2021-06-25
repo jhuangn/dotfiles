@@ -15,6 +15,7 @@
     ~/.gitconfig: gitconfig
     ~/.global_extra_conf.py: global_extra_conf.py
     ~/.jupyter: jupyter
+    ~/.p10k.zsh: p10k.zsh
 
 - shell:
   - [git submodule sync --recursive]
