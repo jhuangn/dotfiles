@@ -152,3 +152,9 @@ unset __conda_setup
 if uname -a|grep -q Linux; then
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 fi
+
+# chrome for wsl
+if uname -a|grep -q microsoft; then
+    alias chrome="/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe"
+fi
+

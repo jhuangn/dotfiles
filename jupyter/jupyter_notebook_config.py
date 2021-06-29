@@ -1,3 +1,5 @@
+import os
+
 # Configuration file for jupyter-notebook.
 
 #------------------------------------------------------------------------------
@@ -146,7 +148,8 @@
 #  standard library module, which allows setting of the BROWSER environment
 #  variable to override it.
 #  Default: ''
-# c.NotebookApp.browser = ''
+if 'microsoft' in os.uname().release:
+    c.NotebookApp.browser = u'/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe %s'
 
 ## The full path to an SSL/TLS certificate file.
 #  Default: ''
@@ -379,7 +382,7 @@
 #  module, unless it is overridden using the --browser (NotebookApp.browser)
 #  configuration option.
 #  Default: True
-c.NotebookApp.open_browser = False
+# c.NotebookApp.open_browser = False
 
 ## Hashed password to use for web authentication.
 #  
@@ -518,7 +521,7 @@ c.NotebookApp.open_browser = False
 #  Disabling this setting to False will disable this behavior, allowing the
 #  browser to launch by using a URL and visible token (as before).
 #  Default: True
-# c.NotebookApp.use_redirect_file = True
+c.NotebookApp.use_redirect_file = False
 
 ## DEPRECATED, use tornado_settings
 #  Default: {}
