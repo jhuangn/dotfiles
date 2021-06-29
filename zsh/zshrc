@@ -150,11 +150,19 @@ unset __conda_setup
 
 # homebrew for linux
 if uname -a|grep -q Linux; then
-    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    if test -d /home/linuxbrew/.linuxbrew; then
+        eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    fi
 fi
 
 # chrome for wsl
 if uname -a|grep -q microsoft; then
     alias chrome="/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe"
+    export BROWSER="/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe"
+fi
+
+# open for wsl
+if uname -a|grep -q microsoft; then
+    alias open="powershell.exe /c start"
 fi
 
