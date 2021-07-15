@@ -32,8 +32,8 @@
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # os_icon               # os identifier
-    anaconda                # conda environment (https://conda.io/)
     dir                     # current directory
+    anaconda                # conda environment (https://conda.io/)
     vcs                     # git status
     vi_mode                 # vi mode (you don't need this if you've enabled prompt_char)
     vim_shell               # vim shell indicator (:sh)
