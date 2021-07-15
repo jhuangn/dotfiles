@@ -51,3 +51,6 @@
 [submodule "vim/pack/vendor/start/YouCompleteMe"]
 	path = vim/pack/vendor/start/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "vim/pack/vendor/start/markdown-preview.nvim"]
+	path = vim/pack/vendor/start/markdown-preview.nvim
+	url = https://github.com/iamcco/markdown-preview.nvim
